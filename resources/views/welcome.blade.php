@@ -17,7 +17,7 @@
 </head>
 
 <body class="antialiased">
-    <main class="h-screen w-screen flex justify-center items-center flex-row">
+    <main class="h-screen w-screen flex justify-center items-center flex-col container mx-auto">
         {{-- Agregar inputs para: hotelid, checkin, checkout, numberOfGuests, NumberOfRooms, currency --}}
         <section>
             <h1 class="text-3xl font-bold mb-5">Search for a hotel</h1>
@@ -56,7 +56,6 @@
                     Currency
                     <select name="currency" id="currency"
                         class="block rounded-md border-0 py-2 px-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-                        <option value="USD">USD</option>
                         <option value="EUR">EUR</option>
                     </select>
                 </label>
@@ -74,7 +73,7 @@
             </div>
         </section>
 
-        <section id="#hotels"></section>
+        <section id="hotels" class="w-full flex flex-col gap-10 h-[350px] overflow-y-auto"></section>
 
     </main>
 

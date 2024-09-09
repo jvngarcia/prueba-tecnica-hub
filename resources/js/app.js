@@ -41,18 +41,25 @@ $("form").addEventListener("submit", function (e) {
             } else {
                 $errors.innerHTML = "";
                 $hotels.innerHTML = "";
-                data.hotels.forEach((hotel) => {
-                    $("#hotels").innerHTML += `
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title>${hotel.name}</h5>
-                            <p class="card-text">${hotel.description}</p>
-                            <p class="card-text">Price: ${hotel.price}</p>
-                            <p class="card-text">Rating: ${hotel.rating}</p>
-                        </div>
+
+                let html = "";
+                data.rooms.forEach((room) => {
+                    html += `
+                    <div class="bg-gray-200 rounded-lg px-3 py-2">
+                            <h5 class="text-blue-600">Room: ${room.roomId}</h5>
+                            `;
+                    room.rates.forEach((rate) => {
+                        html += `
+                            <p class="text-gray-600">Price: ${rate.price}</p>
+                            `;
+                    });
+
+                    html += `                
                     </div>
                     `;
                 });
+
+                $hotels.innerHTML = html;
             }
         })
         .catch((error) => {
