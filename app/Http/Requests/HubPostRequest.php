@@ -23,8 +23,8 @@ class HubPostRequest extends FormRequest
     {
         return [
             'hotelId' => 'required|integer',
-            'checkIn' => 'required|date|after_or_equal:today|before:checkOut|date_format:yyyy-mm-dd',
-            'checkOut' => 'required|date|after:checkIn|after_or_equal:today|date_format:yyyy-mm-dd',
+            'checkIn' => 'required|date|after_or_equal:today|before:checkOut|date_format:Y-m-d',
+            'checkOut' => 'required|date|after:checkIn|after_or_equal:today|date_format:Y-m-d',
             'numberOfGuests' => 'required|integer|min:1',
             'numberOfRooms' => 'required|integer|min:1',
             'currency' => 'required|string|size:3',
