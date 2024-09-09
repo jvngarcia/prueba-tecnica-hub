@@ -71,4 +71,4 @@ private $repositories = [
 
 ## Consumo de API
 
-Revisar el link de postman para ejemplo de consumo y respuesta: (Click acá)[https://documenter.getpostman.com/view/18337636/2sAXjSyoKN]
+Revisar el link de postman para ejemplo de consumo y respuesta: [Click Acá](https://documenter.getpostman.com/view/18337636/2sAXjSyoKN)
