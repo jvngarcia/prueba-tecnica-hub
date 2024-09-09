@@ -62,3 +62,9 @@ private $repositories = [
 ```
 
 -   Y listo, las nuevas búsquedas hacia el nuevo proveedor se incorporarán de manera automática a la respuesta del HUB.
+
+## Puntos de mejora
+
+-   Implementar test unitarios
+-   Implementar test de integración
+-   Tomar en cuenta que si se implementa un nuevo proveedor, y posee el mimo room id que otro, no se agrega a la información, sino que aparecen ambos
