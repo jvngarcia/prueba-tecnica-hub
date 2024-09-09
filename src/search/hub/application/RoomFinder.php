@@ -38,6 +38,10 @@ class RoomFinder
     }
 
 
+    // foreach ($data as $value) {
+    // }
+
+
 
     return [
       'rooms' => $data,

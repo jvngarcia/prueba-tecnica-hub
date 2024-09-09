@@ -11,6 +11,7 @@ class HUBPostController
 
   private $repositories = [
     HotelLegsRepository::class,
+    ProveedorRepository::class
   ];
 
   public function __construct()
