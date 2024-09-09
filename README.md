@@ -68,3 +68,7 @@ private $repositories = [
 -   Implementar test unitarios
 -   Implementar test de integración
 -   Tomar en cuenta que si se implementa un nuevo proveedor, y posee el mimo room id que otro, no se agrega a la información, sino que aparecen ambos
+
+## Consumo de API
+
+Revisar el link de postman para ejemplo de consumo y respuesta: (Click acá)[https://documenter.getpostman.com/view/18337636/2sAXjSyoKN]
